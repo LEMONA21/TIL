@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제10</title>
+    <style>
+        #container {
+            width: 440px;
+            border: 2px solid black;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        #container > .box {
+            float: left;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        #container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #container > .box:first-child {
+            background-color: pink;
+        }
+
+        #container > .box:nth-child(2) {
+            background-color: yellowgreen;
+        }
+
+        #container > .box:nth-child(3) {
+            background-color: cyan;
+        }
+
+        #container > .box:nth-child(4) {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">pink</div>
+        <div class="box">yellowgreen</div>
+        <div class="box">cyan</div>
+        <div class="box">gold</div>
+    </div>
+</body>
+</html>

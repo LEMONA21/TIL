@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제13</title>
+    <style>
+        #container {
+            width: 1080px;
+            margin: 0 auto;
+        }
+
+        #header,
+        #nav,
+        #sidebar,
+        #content,
+        #footer {
+            border: 5px solid #aaa;
+
+            font-size: 1,2em;
+            font-weight: bold;
+            text-align: center;
+            line-height: 2em;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #wrap::after {content: ""; display: block; clear: both;}
+        #sidebar {
+            float: left;
+            width: 200px;
+            height: 580px;
+            margin-right: 10px;
+        }
+
+        #content {
+            float: left;
+            width: 870px;
+            height: 580px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            Header
+        </header>
+        <nav id="nav">
+            Navigation
+        </nav>
+        <div id="wrap">
+            <aside id="sidebar">
+                Sidebar
+            </aside>
+            <article id="content">
+                Content
+            </article>
+        </div> <!--end of #wrap-->
+        <footer id="footer">
+            Footer
+        </footer>
+    </div> <!--end of #container-->
+</body>
+</html>

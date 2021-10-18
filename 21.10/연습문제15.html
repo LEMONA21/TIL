@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제15</title>
+    <!-- <link rel="stylesheet" href="../../TIL/CSS RESET.css"> -->
+    <style>
+        /* #cotainer {
+            width: 1200px;
+            margin: 0 auto;
+        } */
+
+        #header > h1 {
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        #nav {
+            background-color: #ccc;
+            box-shadow:  4px 4px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        #nav::after {content: ""; display: block; clear: both;}
+
+        #nav > ul:first-child {float: left;}
+        #nav > ul:last-child {float: right;}
+
+        #nav > ul > li {float: left;}
+        #nav > ul > li  {list-style : none;}
+
+        #nav > ul > li > a {
+            padding: 1em 1em;
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        #nav > ul > li > a:hover {background-color: aqua;}
+
+        
+        #wrap-container {
+            overflow: hidden;
+            padding-top: 2em;
+        }
+        
+        #sidebar {
+            width: 200px;
+            float: left;
+        }
+
+        #sidebar > ul > li  {list-style : none;}
+
+        #sidebar > ul > li > a {
+            display: block;
+            padding: 1em 1em;
+            text-decoration: none;
+            color: black;
+            font: bold;
+        }
+
+        #sidebar > ul > li:hover {background-color: aqua;}
+
+        #wrap {
+            width: 100%;
+            float: left;
+
+            margin-right: -200%;
+        }
+
+        #content {
+            margin-right: 200px;
+            padding: 1em;
+            border-left: 1px solid #888;
+        }
+
+        #content > h2 {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-bottom: 0.6em;
+        }
+
+        #content > p {
+            margin-bottom: 1em;
+            line-height: 1.5;
+        }
+
+        #footer {
+            padding: 2em;
+            text-align: right;
+
+            background-color: slategray;
+        }
+
+
+        #footer > em {
+            font-style: italic;
+        }
+
+        /* 대체 footer 왜 안 내려가니ㅠㅠ??? */
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <h1>
+                Fluid Layout
+            </h1>
+        </header>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="home">home</a></li>
+                <li><a href="HTML">HTML</a></li>
+                <li><a href="CSS">CSS</a></li>
+                <li><a href="JavaScript">JavaScript</a></li>
+                <li><a href="jQuery">jQuery</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="Login">Login</a></li>
+                <li><a href="Sign up">Sign up</a></li>
+            </ul>
+        </nav>
+
+        <div id="warp-container">
+            <aside id="sidebar">
+                <ul>
+                    <li><a href="home">home</a></li>
+                    <li><a href="HTML">HTML</a></li>
+                    <li><a href="CSS">CSS</a></li>
+                    <li><a href="JavaScript">JavaScript</a></li>
+                    <li><a href="jQuery">jQuery</a></li>
+                </ul>
+            </aside>
+
+            <div id="wrap">
+                <article id="content">
+                    <h2>Fluid Layout</h2>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    
+    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </p>
+    
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    
+    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </p>
+    
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    
+    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </p>
+                </article>
+            </div>
+
+
+        </div>
+<!-- 
+        <footer id="footer">
+            <em>
+                &copy; 2021 Visual Studio Code
+            </em>
+        </footer> -->
+
+    </div>
+
+</body>
+
+
+</html>

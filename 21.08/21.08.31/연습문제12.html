@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제12</title>
+    <style>
+        #container {
+            width: 660px;
+            border: 2px solid black;
+            padding: 10px;
+
+            margin: 0 auto;
+        }
+
+
+        #container > div {
+            width: 200px;
+            height: 200px;
+            font: bold;
+            font-size: 1.2em;
+            text-align: center;
+            line-height: 200px;
+
+            float: left;
+
+            margin-right: 10px;
+
+        }
+
+        #container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #container > div:first-child {
+            background-color: yellowgreen;
+            width: 650px;
+            margin-bottom: 10px;   
+        }
+
+        #container > div:nth-child(2) {
+            background-color: pink;
+        }
+
+        #container > div:nth-child(3) {
+            background-color: cyan;
+            margin: 0 20px;
+        }
+
+        #container > div:nth-child(4) {
+            background-color: gold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>Yellowgreen</div>
+        <div>Pink</div>
+        <div>Cyan</div>
+        <div>Gold</div>
+    </div>
+</body>
+</html>
