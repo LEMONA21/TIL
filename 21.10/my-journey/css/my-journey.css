@@ -1,5 +1,284 @@
+/* 공용으로 쓸 class style */
+img{
+    width: 100%;
+    max-width: 100%;
+}
+input{
+    border:0;
+    box-shadow: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
 .container{
     width: 100%;
     max-width: 1100px;
     margin:0 auto;
+}
+.hidden {
+    position: absolute;
+    top: -9999em;
+    left: -9999em;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    text-indent: -9999em;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+.second .container,
+.third .container{
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.grey-desc{
+    font-size:16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color:#ccc;
+}
+.two-horizontal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.two-horizontal .img-wrap{
+    width: 350px;
+}
+.two-horizontal .text-wrap{
+    width: calc(100% - 400px);
+}
+.two-horizontal .text-wrap h2{
+    font-size:30px;
+    margin-bottom:24px;
+}
+
+.second,
+.third{
+    padding-top:50px;
+}
+.second .container,
+.third .container{
+    padding-bottom:50px;
+}
+
+/* 섹션 개별 style */
+/* header */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding:20px 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+header h1{
+    width: 145px;
+    height: 30px;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+header ul li{
+    width: 25px;
+    margin-right:10px;
+    text-align: center;
+}
+header ul li:last-child{
+    margin-right:0;
+}
+header ul li a{
+    display: block;
+    height:25px;
+    opacity: 0.5;
+}
+header ul li a:hover{
+    opacity:1;
+}
+/* .first */
+.first{
+    padding-top:20px;
+}
+.first .emphasize{
+    margin-bottom: 25px;
+    font-size:20px;
+    line-height: 1.5;
+    text-align: center;
+}
+/* .second */
+.journey-icon-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+/* 이미지 - 텍스트 형태 똑같으므로 공용으로 작성하기 */
+.journey-icon-wrap li{
+    width: calc(33% - 15px);
+    margin-right: 30px;
+}
+.journey-icon-wrap li:last-child{
+    margin-right: 0;
+}
+.journey-icon img{
+    display: block;
+    width: 50px;height:50px;
+    margin:0 auto 20px;
+}
+.journey-icon-wrap li p{
+    text-align: center;
+}
+.journey-icon .title{
+    margin-bottom: 15px;
+    font-size:20px;
+    line-height: 20px;
+}
+.journey-icon .bar{
+    position: relative;
+    padding-top:30px;
+}
+.journey-icon .bar:before{
+    content:"";
+    position: absolute;
+    top:15px;
+    left:50%;
+    margin-left:-5px;
+    display: block;
+    width: 10px;height:2px;
+    background:#ccc;
+}
+/* .third */
+.third .img-wrap{margin-right:50px;}
+
+/* .fourth */
+.fourth{
+    padding:40px 0;
+}
+.fourth .img-wrap {margin-left:50px;}
+.fourth .link-wrap{
+    display: flex;
+    align-items: center;
+}
+.fourth .grey-desc{
+    margin-bottom:40px;
+}
+.more{
+ /* 공용으로 쓸 more */
+    display: block;
+    width: 200px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    color:#fff;
+    font-size:14px;
+    background:#e9544d;
+    border-radius: 10px;
+}
+.link-wrap span{
+    display: inline-block;
+    margin:0 10px;
+    font-size:12px;
+    color:#333;
+}
+.link-wrap .right{
+    color:#e9544d;
+}
+
+/* .fifth */
+.fifth{
+    padding:140px 0;
+    background-color:#eee;
+    text-align: center;
+}
+.fifth .twitter{
+    width: 50px;
+    margin:0 auto 60px;
+}
+.fifth p{
+    margin-bottom: 40px;
+    font-size:20px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.fifth a.click{
+    font-size:16px;
+    color:#bbb;
+}
+.fifth a.click span{
+    color:#f32c2c;
+}
+/* sixth */
+.sixth{
+    padding:80px 0 400px;
+    background-image:url(../images/bg_sixth.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.sixth h2{
+    font-size:30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.sixth .send-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:800px;
+    margin:0 auto 30px;
+}
+.send-wrap label{
+    width:calc(100% - 220px);
+    height:50px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-right: 40px;
+    border:1px solid #bbb;
+    background:#ddd;
+}
+.send-wrap label input{
+    width: 100%;
+    height: 100%;
+    color:#333;
+    font-size:16px;
+    padding:0 10px;
+}
+.send-wrap label input::placeholder{
+    color:#bbb;
+}
+.sixth .sns-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    margin:0 auto;
+    padding-top: 120px;
+}
+.sixth .sns-wrap:before{
+    content:"";
+    position: absolute;top:80px;
+    left:50%;
+    margin-left:-10px;
+    display: block;
+    width:20px;height:2px;
+    background:#ccc;
+}
+.sns-wrap li{
+    width: calc(33% - 10px);
+}
+.sns-wrap li a{
+    display: block;
+}
+.sixth .grey-desc{
+    text-align: center;
+    color:#000;
+
 }

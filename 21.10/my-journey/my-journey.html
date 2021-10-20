@@ -13,18 +13,20 @@
 <!--  -->
 <div class="wrap">
     <header>
-        <h1><img src="images/logo.jpg" alt="로고이미지"></h1>
-        <ul>
-            <li><a href="javascript:void(0);"><img src="images/facebook.png" alt="sns facebook"></a></li>
-            <li><a href="javascript:void(0);"><img src="images/twitter.png" alt="sns twitter"></a></li>
-            <li><a href="javascript:void(0);"><img src="images/instagram.png" alt="sns instagram"></a></li>
-        </ul>
+        <div class="container">
+            <h1><img src="images/logo.jpg" alt="로고이미지"></h1>
+            <ul>
+                <li><a href="javascript:void(0);"><img src="images/facebook.png" alt="sns facebook"></a></li>
+                <li><a href="javascript:void(0);"><img src="images/twitter.png" alt="sns twitter"></a></li>
+                <li><a href="javascript:void(0);"><img src="images/instagram.png" alt="sns instagram"></a></li>
+            </ul>
+        </div>
     </header>
     <section class="first">
         <div class="container">
             <!-- 섹션마다 섹션의 제목이 필요 하지만 디자인에는 없을경우 html에는 작성 -> CSS로 hidden처리 -->
             <h2 class="hidden">첫번째 섹션 제목 (임시)</h2>
-            <p>hello you are looking at my journey html theme.<br>express your thoughts and emotions about journey of life</p>
+            <p class="emphasize">hello you are looking at my journey html theme.<br>express your thoughts and emotions about journey of life</p>
             <div class="first-visual">
                 <img src="https://via.placeholder.com/700x300.jpg" alt="임시이미지">
             </div>
@@ -37,7 +39,7 @@
                 <li class="journey-icon">
                     <img src="images/man.png" alt="임시이미지">
                     <p class="title"><strong>A you mannnnnn!</strong></p>
-                    <p class="grey-desc">
+                    <p class="grey-desc bar">
                         You beatin' drum like dum di di dey <br>
                         I love the dirty rhythm you play<br>
                         I wanna hear you calling my name
@@ -46,7 +48,7 @@
                 <li class="journey-icon">
                     <img src="images/house.png" alt="임시이미지">
                     <p class="title"><strong>Pretty house:D</strong></p>
-                    <p class="grey-desc">
+                    <p class="grey-desc bar">
                         I'll provide that you will always have it <br>
                         I'll be on deck keep it in check <br>
                         When you need that I'mma let you have it
@@ -55,7 +57,7 @@
                 <li class="journey-icon">
                     <img src="images/people.png" alt="임시이미지">
                     <p class="title"><strong>Hello world !</strong></p>
-                    <p class="grey-desc">
+                    <p class="grey-desc bar">
                         Be my woman, girl, I'mma <br>
                         Be your man<br>
                         Be my woman, girl, I'll
@@ -99,6 +101,7 @@
                     </p>
                     <div class="link-wrap">
                         <a href="javascript:void(0);" class="more">More information</a>
+                        <span>or</span>
                         <a href="javascript:void(0);" class="right">get a right now!</a>
                     </div>
                 </div>
@@ -114,7 +117,7 @@
             <div class="twitter"><img src="images/twitter.png" alt="twitter"></div>
             <p>You beatin' drum like dum di di dey I love the dirty rhythm you play<br>
                 I wanna hear you calling my name</p>
-            <a href="javascript:void(0);"><span>@dracula</span> click here!</a>
+            <a href="javascript:void(0);" class="click"><span>@dracula</span> click here!</a>
         </div>
     </section>
     <section class="sixth">
@@ -122,7 +125,7 @@
             <h2>Subscribe to our newsletter<!-- 디자인상 이 섹션의 제목에 해당 --></h2>
             <div class="send-wrap">
                 <label for="email">
-                    <input type="text" id="email">
+                    <input type="text" id="email" placeholder="enter your email">
                 </label>
                 <a href="javascript:void(0)" class="more">
                     <!-- 네번째 섹션 more information과 디자인 동일 하니까 class재활용 -->
